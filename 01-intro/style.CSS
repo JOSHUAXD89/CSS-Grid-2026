@@ -1,0 +1,18 @@
+/* 
+
+Grid
+
+Es un sistema de diseñop o layout de 2 dimensiones donde podemos controlar las filas y columnas
+
+*/
+
+.container {
+    display: grid;
+    grid-template-columns: 100px 200px 300px;
+    grid-template-rows: 100px 200px 100px;
+    background-color: pink;
+}
+
+.item {
+    border: 3px palevioletred;
+}
