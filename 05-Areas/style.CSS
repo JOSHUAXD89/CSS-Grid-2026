@@ -1,0 +1,43 @@
+body {
+    color: azure;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 2fr 1fr;
+
+    grid-template-areas: 
+    "header header header"
+    "main main sidebar"
+    "footer footer footer";
+
+    height: 100vh;
+    background-color: rgb(210, 24, 61);
+}
+
+.item {
+    text-align: center;
+}
+
+.header {
+    grid-area: header;
+    background-color: rgb(255, 78, 166);
+}
+
+.main {
+    grid-area: main;
+    background-color: rgb(255, 0, 162);
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: rgb(188, 0, 131);
+}
+
+.footer {
+    grid-area: footer;
+    background-color: rgb(139, 0, 74);
+}
